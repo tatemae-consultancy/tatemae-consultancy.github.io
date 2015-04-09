@@ -16,6 +16,6 @@ function rotateServices() {
 }
 
 $(document).ready(function() {
-  $('body').fadeIn({duration: 3000});
+  $('main').fadeIn({duration: 3000});
   setInterval(rotateServices, 5000);
 });
