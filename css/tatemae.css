@@ -37,6 +37,7 @@ input[type="search"]::-webkit-search-decoration {
 body {
   background: #000;
   color: #9e9e9e;
+  display:none;
   text-align:center;
 }
 
@@ -83,7 +84,8 @@ address > a {
   transition: color 0.25s ease;
 }
 
-address > a:hover {
+address > a:hover,
+.js-services {
   color:#D0021B;
 }
 
