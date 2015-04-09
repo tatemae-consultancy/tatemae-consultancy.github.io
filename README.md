@@ -1,2 +1,1 @@
-# tatemae-consultancy.github.io
-Company website available at tatem.ae
+Company website available at http://tatem.ae
