@@ -30,3 +30,74 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
+
+/*============================================================================
+  #Layout
+==============================================================================*/
+body {
+  background: #000;
+  color: #9e9e9e;
+  text-align:center;
+}
+
+main {
+  padding:1em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#logo {
+  opacity: 0.15;
+  width: 130px;
+}
+
+/*============================================================================
+  #Typography
+==============================================================================*/
+body {
+  font-family:"proxima-nova-alt", "Avenir Next", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight:100;
+  line-height:24px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+address > a {
+  color:#9e9e9e;
+  display:block;
+  font-style:normal;
+  text-decoration:none;
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+
+address > a:hover {
+  color:#D0021B;
+}
+
+address > .sep {
+  display:none;
+}
+
+/*============================================================================
+  #Responsive
+==============================================================================*/
+
+@media (min-width: 768px) {
+  #logo {
+    width:200px;
+  }
+
+}
