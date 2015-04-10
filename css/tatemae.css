@@ -62,14 +62,14 @@ main {
 body {
   font-family:"proxima-nova-alt", "Avenir Next", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
-  font-weight:100;
+  font-weight:300;
   line-height:24px;
 }
 
 h1 {
   color: #fff;
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 address > a {
