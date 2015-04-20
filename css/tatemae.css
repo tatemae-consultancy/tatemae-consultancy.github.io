@@ -42,18 +42,12 @@ body {
 
 main {
   display:none;
-  left: 50%;
-  padding:1em;
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  padding:3em 1em 0;
 }
 
 #logo {
   opacity: 0.15;
-  width: 130px;
+  width: 320px;
 }
 
 /*============================================================================
@@ -61,15 +55,16 @@ main {
 ==============================================================================*/
 body {
   font-family:"proxima-nova-alt", "Avenir Next", "Helvetica", "Arial", sans-serif;
-  font-size: 16px;
+  font-size: 24px;
   font-weight:300;
-  line-height:24px;
+  line-height:32px;
 }
 
 h1 {
   color: #fff;
-  font-size: 24px;
+  font-size: 48px;
   font-weight: 300;
+  line-height: 56px;
 }
 
 address > a {
@@ -98,8 +93,24 @@ address > .sep {
 ==============================================================================*/
 
 @media (min-width: 768px) {
+  main {
+    left: 50%;
+    padding: 1em;
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 36px;
+    line-height: 44px;
+  }
+
   #logo {
-    width:200px;
+    width: 280px;
   }
 
 }
