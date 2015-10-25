@@ -24,5 +24,5 @@ $(document).ready(function() {
     $('#bg-tmp, #bg-overlay').addClass('faded');
   });
   reposition();
-  $(window).resize(reposition);
+  $(window).resize(function() { reposition() });
 });
