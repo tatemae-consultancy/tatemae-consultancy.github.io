@@ -14,7 +14,6 @@ function reposition() {
   $('main').css('margin-top', one_sixth + 'px');
 
   $btn = $('.btn')
-  console.log(($btn.width()+40)/2);
   $btn.css('margin-left', '-' + ($btn.width()+40)/2 + 'px');
   $btn.css('bottom', one_sixth + 'px');
 }
