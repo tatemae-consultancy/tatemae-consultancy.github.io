@@ -1,0 +1,139 @@
+/* Global Styles */
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+a[href] {
+  color: #ffffff;
+  text-decoration-color: #ffffff;
+  text-decoration-thickness: 0.04167em;
+  text-underline-offset: 1.5px;
+}
+
+a[href]:hover,
+a[href]:focus {
+  border-color: #ffa500;
+  color: #ffa500;
+  text-decoration-color: #ffa500;
+}
+
+a[target]:after {
+  background-image: url(/images/assets/external-link.svg);
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  content: "";
+  display: inline-block;
+  height: 18px;
+  margin-left: 3px;
+  vertical-align: middle;
+  width: 18px;
+}
+
+h1 {
+  font-size: 150%;
+  text-transform: uppercase;
+}
+
+h1 span {
+  display: block;
+  font-size: 50%;
+  letter-spacing: 0.1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  padding: 1.5rem;
+  position: fixed;
+  z-index: 4;
+}
+
+small {
+  font-size: 75%;
+}
+
+#bg-img {
+  background-image: url('../images/background.jpg');
+  z-index: 1;
+}
+
+#bg-overlay {
+  background: #000;
+  opacity: 0.5;
+  z-index: 3;
+  transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+}
+
+#bg-overlay.faded {
+  opacity: 0.3;
+}
+
+#bg-tmp {
+  background-image: url('../images/background-sm.jpg');
+  opacity: 1;
+  z-index: 2;
+  transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+}
+
+#bg-tmp.faded {
+  opacity: 0;
+}
+
+#not-found #bg-img {
+  background-image: url('../images/not-found.jpg');
+}
+
+#not-found #bg-overlay.faded {
+  opacity: 0.5;
+}
+
+#not-found #bg-tmp {
+  background-image: url('../images/not-found-sm.jpg');
+}
+
+.btn {
+  background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.6) 2%, rgba(0, 0, 0, 0.4) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 3rem;
+  color: #fff;
+  display: inline-block;
+  font-size: 75%;
+  line-height: 1;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  width: fit-content;
+}
+
+.btn:hover {
+  background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.85) 2%, rgba(0, 0, 0, 0.65) 100%);
+}
+
+.container {
+  background-repeat: no-repeat;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.kanji {
+  font-family: 'Noto Serif JP', serif;
+}

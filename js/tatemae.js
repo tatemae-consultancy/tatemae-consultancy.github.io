@@ -1,27 +1,19 @@
 function reposition() {
-  window_height = $(window).height();
-  window_width = $(window).width();
-  one_sixth = window_height/6;
-
-  aspect_ratio = 16 / 9; // Must match aspect ratio of background image
-  window_aspect_ratio = window_width / window_height;
-  if (window_aspect_ratio > aspect_ratio) {
-    $('.container').css('background-size', window_width + 'px auto');
-  } else {
-    $('.container').css('background-size', 'auto ' + window_height + 'px');
+  console.log('Ran!');
+  windowHeight = window.innerHeight;
+  windowWidth = window.innerWidth;
+  aspectRatio = 16 / 9;
+  windowAspectRatio = windowWidth / windowHeight;
+  const backgroundSize = (windowAspectRatio > aspectRatio) ? windowWidth + 'px auto' : 'auto ' + windowHeight + 'px';
+  const containers = document.getElementsByClassName('container');
+  for (const container of containers) {
+    container.style.backgroundSize = backgroundSize;
   }
-
-  $('main').css('margin-top', one_sixth + 'px');
-
-  $btn = $('.btn')
-  $btn.css('margin-left', '-' + ($btn.width()+40)/2 + 'px');
-  $btn.css('bottom', one_sixth + 'px');
+  const tmps = document.getElementsByClassName('tmp');
+  for (const tmp of tmps) {
+    tmp.classList.add('faded');
+  }
 }
 
-$(document).ready(function() {
-  Pace.on('done', function() {
-    $('#bg-tmp, #bg-overlay').addClass('faded');
-  });
-  reposition();
-  $(window).resize(function() { reposition() });
-});
+window.addEventListener("load", reposition);
+window.addEventListener("resize", reposition);
