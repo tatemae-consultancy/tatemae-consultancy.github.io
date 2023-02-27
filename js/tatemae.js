@@ -8,6 +8,10 @@ function reposition() {
   for (const container of containers) {
     container.style.backgroundSize = backgroundSize;
   }
+  const images = document.getElementsByClassName('container');
+  for (const image of images) {
+    image.style.visibility = 'visible';
+  }
   const tmps = document.getElementsByClassName('tmp');
   for (const tmp of tmps) {
     tmp.classList.add('faded');
