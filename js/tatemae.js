@@ -1,5 +1,4 @@
 function reposition() {
-  console.log('Ran!');
   windowHeight = window.innerHeight;
   windowWidth = window.innerWidth;
   aspectRatio = 16 / 9;
